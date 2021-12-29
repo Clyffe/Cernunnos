@@ -37,11 +37,11 @@ class newMedScreen extends React.Component{
             return
         }
         // Create the 'med' object, setting the state equal to the input, and giving it a unique ID
-        const med = {
-          med: this.state.med,
+        const med = this.state.med
+/*           med: this.state.med,
           dose: this.state.dose,
           id: uuidV4(),
-        }
+        } */
         console.log(med)
         // Set the input fields back
         this.setState({
@@ -49,7 +49,7 @@ class newMedScreen extends React.Component{
           dose: ''
         }, () => {
             // Go to the home screen
-          this.props.navigation.navigate('Home', med)
+          this.props.navigation.navigate('Home', {med});
         })
       }
     render(){

@@ -1,3 +1,6 @@
+# Watchman
+.watchmanconfig
+
 # OSX
 #
 .DS_Store
@@ -59,9 +62,3 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
-
-.watchmanconfig
-.babel.config.js
-.prettierrc.js
-.flowconfig
-.eslintrc.js
